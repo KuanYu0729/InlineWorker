@@ -66,7 +66,6 @@ class InlineWorker {
 			`;
             worker = new Thread.Worker(threadBody, { eval: true });
             worker.on('message', (data) => {
-                console.log(`Receive data`);
                 if (typeof this.onmessage === "function") {
                     this.onmessage(data);
                 }
