@@ -1,0 +1,21 @@
+{
+  "name": "inlineworker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/InlineWorker.js",
+  "types": "./dist/InlineWorker.d.ts",
+  "scripts": {
+    "init": "tsc --init",
+    "build": "rm -rf ./dist && tsc --build tsconfig.json && node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "google-closure-compiler": "^20211201.0.0",
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  }
+}
