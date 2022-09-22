@@ -13,7 +13,7 @@ export class InlineWorker {
 		if (typeof Worker === "function") {
 			functionBody = `
 				onmessage = async function (e) {
-					const result = await (${functionBody})(e.data);
+					const result = await (${functionBody})(postMessage, e.data);
 					postMessage(result);
 				};
 			`
